@@ -253,6 +253,47 @@ footer {
     }
 }
 
+@media (min-width: 760px)  and (max-width: 920px) {
+    h1 {
+       width: 100%;
+    }
+
+    .vrContent {
+        padding: 1em;
+        width: 70%;
+        left: 30%;
+    }
+
+    .vrImg {
+        width: 80vw;
+    }
+
+    .gridContent2 {
+        bottom: 3%;
+        right: 9%;
+    }
+
+    .gridContent p,
+    .gridContent2 p {
+        font-size: 1.3rem;
+    }
+
+    .gridContent {
+        top: 40%;
+        left: 12%;
+    }
+}
+
+@media (min-width: 1022px) and (max-width: 1025px) {
+    h1 {
+        width: 100%;
+    }
+
+    .vrContent {
+        padding: 1.5em;
+    }
+}
+
 @media (max-width: 600px) {
     .nav-Items,
     .main,
@@ -419,7 +460,6 @@ footer {
     }
 
     .footNav a {
-        text-align: center;
         padding: 0;
     }
 }

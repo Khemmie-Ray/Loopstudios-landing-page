@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot.png)
+![](../Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Khemmie-Ray/Loopstudios-landing-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Khemmie-Ray/Loopstudios-landing-page.git](https://github.com/Khemmie-Ray/Loopstudios-landing-page.git)
+- Live Site URL: [ https://khemmie-ray.github.io/Loopstudios-landing-page/]( https://khemmie-ray.github.io/Loopstudios-landing-page/)
 
 ## My process
 
@@ -48,7 +48,7 @@ This project gave me a better understanding of position and how it helps in crea
 
 ### Continued development
 
-The concept that I will like to learn more id the usage of z-index.
+I will like to learn more on the usage of z-index.
 
 ### Useful resources
 
@@ -56,7 +56,7 @@ The concept that I will like to learn more id the usage of z-index.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Khemmie-Ray)
+- Frontend Mentor - [@Khemmie-Ray](https://www.frontendmentor.io/profile/Khemmie-Ray)
 
 ## Acknowledgments
 
