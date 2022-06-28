@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+
+header {
+    background-image: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1em;
+    background-position: center;
+}
+
+/* =======================================
+                Typography
+======================================= */
+h1 {
+    color: white;
+    padding: .5em;
+    width: 60%;
+    border: 2px solid white;
+
+}
+
+h2, h1,
+.gridContent p,
+.gridContent2 p {
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.vrContent p {
+    color: hsl(0, 0%, 55%);
+}
+
+.gridContent p,
+.gridContent2 p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 20%;
+    color: hsl(0, 0%, 100%);
+}
+
+footer p {
+    color: hsl(0, 0%, 55%);
+}
+
+/* =======================================
+                Layout
+======================================= */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+.headerText {
+    margin: 0 auto;
+    margin-top: 8em;
+}
+
+.nav-Items,
+nav,
+.main,
+.creations,
+.gridItems,
+.gridItems2,
+.gridContent,
+.gridContent2,
+footer,
+.footNav,
+.contact {
+    display: flex;
+}
+
+nav,
+.creations,
+.gridItems,
+.gridItems2, 
+.gridContent,
+.gridContent2,
+footer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    margin: 10em auto;
+}
+
+.creations {
+    margin: 0 auto 2em;
+}
+
+.btn,
+.btnMobile,
+#toggle,
+.closeBtn,
+.mobileLogo {
+    display: none;
+}
+
+.btn,
+.btnMobile {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: .3em 2em;
+    letter-spacing: 2px;
+    border: 2px solid hsl(0, 0%, 55%);
+    background-color: white;
+}
+
+.btn:hover,
+.btn:focus,
+.btnMobile:hover,
+.btnMobile:focus {
+    background-color: black;
+    color: white;
+} 
+
+.gridCreations {
+    position: relative;
+}
+
+.gridContent {
+    top: 43%;
+    left: 12%;
+}
+
+.gridContent,
+.gridContent2 {
+    text-shadow: -1px -1px 0 #000,  
+        1px -1px 0 #000,-1px 1px 0 #000,
+        1px 1px 0 #000;
+    position: absolute;
+}
+
+.gridContent2 {
+    bottom: 0;
+    right: 8%;
+}
+
+footer {
+    background-color: black;
+    margin-top: 10em;
+    padding: 3em 4em;
+}
+
+.contact-icons img {
+    margin-left: 1em;
+}
+
+/* =======================================
+               Media Query
+======================================= */
+
+@media (min-width: 601px) {
+    nav,
+    .headerText,
+    .main,
+    .creations,
+    .gridItems,
+    .gridItems2,
+    .gridContent,
+    .gridContent2 {
+        width: 80%;
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    .nav-Items {
+        display: flex;
+    }
+
+    .nav-Items li:hover {
+        border-bottom: 3px solid white;
+    }
+
+    nav {
+        margin: 3em auto;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .vrContent {
+        position: absolute;
+        background-color: white;
+        width: 50%;
+        bottom: 0;
+        left: 50%;
+        padding: 4em 0 0 6em;
+    }
+
+    .vrContent p {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        display: flex; 
+    }
+
+    .gridItems,
+    .gridItems2 {
+        margin: 0 auto;
+    }
+
+    .gridItems img,
+    .gridItems2 img {
+        width: 23%;
+        margin-bottom: 2em;
+    }
+
+    .contact {
+        margin-right: 6em;
+        flex-direction: column;
+    }
+
+    .footNav  {
+        padding-left: 0;
+    }
+
+    .footLogo {
+        width: 40%;
+    }
+
+    .contact-icons {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-Items,
+    .main,
+    .creations,
+    .gridItems,
+    .gridItems2,
+    .gridContent,
+    .gridContent2,
+    footer,
+    .footNav,
+    .contact {
+        flex-direction: column;
+    }
+
+    #toggle {
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    nav {
+        margin-top: 1em;
+    }
+
+    .navlists {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .mobileLogo {
+        display: block;
+        margin: 2em 1.5em;
+    }
+
+    .closeBtn {
+        display: block;
+        position: absolute;
+        top: 6%;
+        right: 8%;
+    }
+
+    .nav-Items {
+        align-items: flex-start;
+        transition: 0.3s;
+        position: absolute;
+        top: 20%;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-Items a {
+        text-transform: uppercase;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .headerText {
+        margin-top: 9em;
+    }
+
+    .vrContent,
+    .headerText,
+    .vrImg,
+    .gridContent,
+    .gridContent p,
+    .gridContent2,
+    .gridContent2 p {
+        width: 90%;
+    }
+
+    .gridItems,
+    nav, h1 {
+        width: 100%;
+    }
+
+    .headerText {
+        margin-top: 15em;
+    }
+
+    .nav-Items li:first-child {
+        margin-top: 4em;
+    }
+
+    li {
+        margin-bottom: 1em;
+        font-size: 1.2rem;
+    }
+
+    .vrImg {
+        margin: 0 auto 3em;
+    }
+
+    .gridItems img,
+    .gridItems2 img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 2em;
+    }
+
+    .contact,
+    .vrContent {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .gridContent,
+    .gridContent2 {
+        left: 2%;
+    }
+
+    .main {
+        margin-bottom: 2em;
+    }
+
+    .gridContent {
+        top: 4%;
+    }
+
+    .gridContent2 {
+       bottom: 3%;
+    }
+
+    .gridContent p,
+    .gridContent2 p {
+        font-size: 1.6rem;
+    }
+
+    .gridContent2 p {
+        margin-top: 8em;
+    }
+
+    .gridContent p {
+        margin-top: 7.5em;
+    }
+
+    .btnMobile {
+        padding: .5em;
+        width: 100%;
+        display: block;
+    }
+
+    .btn-wrapper {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .footNav a {
+        text-align: center;
+        padding: 0;
+    }
+}
